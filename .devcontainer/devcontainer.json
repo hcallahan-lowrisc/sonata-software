@@ -5,7 +5,11 @@
   "onCreateCommand": "cd /workspaces && git clone https://github.com/lowRISC/sonata-system.git",
   "customizations": {
     "vscode": {
+      "extensions": [
+        "fabiospampinato.vscode-terminals"
+      ],
       "settings": {
+        "terminals.configPath": "/workspaces/sonata-software/.devcontainer/terminals.json",
         "terminal.integrated.profiles.linux": {
           "nix-devshell": {
             "path": "nix",
